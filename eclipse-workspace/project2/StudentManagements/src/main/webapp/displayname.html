@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<input type="text" id="name" placeholder="enter your name">
+<button type="button" id="btn">show me</button>
+<p id="mes">
+<script>
+document.getElementById("btn").addEventListener("click",display);
+function display(){
+	var v=document.getElementById("name").value;
+	document.getElementById("mes").innerHTML="hello"+v;
+}
+</script>
+
+</body>
+</html>
